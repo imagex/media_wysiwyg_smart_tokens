@@ -84,7 +84,7 @@ function media_wysiwyg_smart_tokens_theme() {
 function theme_smart_tokens_wysiwyg_theme_hijack($variables) {
 
   $file = $variables['file'];
-  file_build_content($file, 'full');
+  file_build_content($file, $variables['view_mode']);
   unset($file->content['links']);
 
   if (!isset($file->content['#prefix'])) {
