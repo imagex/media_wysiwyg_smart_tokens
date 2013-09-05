@@ -4,8 +4,6 @@
  * @Todo: Reduce redundant code. Ungh bad. -Shea.
  */
 
-CKEDITOR.config.autoParagraph = false;
-
 CKEDITOR.plugins.add( 'media_placeholder', {
   init: function( editor )
   {
