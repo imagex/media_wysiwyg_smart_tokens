@@ -54,7 +54,7 @@ function media_wysiwyg_smart_tokens_media_token_to_markup_alter(&$element, $tag_
 
     // If we are in the wyswiyg editor we need to add the additional fields
     // to the markup as it only renders the image 'as is'.
-
+    $element['#view_mode'] = $tag_info['view_mode'];
     if (isset($settings['wysiwyg']) && $settings['wysiwyg']) {
       $element['#theme'] = "smart_tokens_wysiwyg_theme_hijack";
     }
